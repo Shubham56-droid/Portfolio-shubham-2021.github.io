@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+body
+{
+   background-color: rgb(131, 131, 131);
+   height:100%;
+   width:100%;
+   
+}
+
+.header
+{
+    background-color: rgb(10, 10, 10);
+    width:100%;
+    height:45px;
+    padding-top:3px;
+    position: absolute;
+    
+}
+
+.nav-bar
+{
+    
+    width:100%;
+    padding-left: 20px;
+    padding-top: 5px;
+    width:90%;
+    background-color: rgba(255, 255, 255, 0.308);
+    margin: auto;
+}
+
+.nav-bar ul li
+{
+   display: inline-block;
+   padding-left: 22px;
+   list-style: none;
+   
+}
+
+.nav-bar ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-bar ul li a:hover
+{
+    color:crimson;
+}
+
+
+.nav-bar ul li a span
+{
+   font-size: 22px;
+   padding-right:20px;
+   color:crimson;
+}
+
+.home
+{
+    height:100vh;
+    width:auto;
+   
+}
+
+.home .container
+{
+    padding:30px;
+}
+
+.home .container .content
+{
+    display: flex;
+}
+
+.home .container .content .img
+{
+    position: relative;
+    height:400px;
+    width:400px;
+    background-color: rgba(255, 255, 255, 0.329);
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    margin:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+
+
+
+.home .container .content .img img
+{
+    position: relative;
+    height:400px;
+    width:400px;
+    border-radius: 50%;
+}
+
+.home .container .content .about
+{
+    position: relative;
+    margin-top:100px;
+    height:150px;
+    
+}
+
+
+
+.home .container .content .about p
+{
+    padding: 10px;
+}
+
+.home .container .content .about p span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.home .container .content .about a
+{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30%;
+    background-color: hotpink;
+    padding:10px;
+    border-radius: 25px;
+    border: 2px soild rgba(255, 255, 255, 0.52);
+    color:rgb(253, 253, 253);
+    background-color: rgb(0, 0, 0);
+}
+
+.home .container .content .about a:hover
+{
+    color:rgb(2, 2, 2);
+    background-color: rgb(59, 59, 59);
+}
+
+
+.about
+{
+    height:60vh;
+    width:auto;
+    margin-top: 10px;
+}
+.about .content
+{
+    background-color: rgba(255, 255, 255, 0.205);
+    height:60vh;
+    margin:10px;
+    padding:10px;
+}
+.about .content .heading
+{
+    display: block;
+    text-align: center;
+    margin-top:10px;
+    
+}
+
+.about .content .heading h1
+{
+   font-size: 45px;
+   transition:1s;
+}
+
+
+.about .content .para
+{
+    margin: 20px;
+    padding:10px;
+}
+
+.about .content .para p
+{
+    font-size: 30px;
+    color: crimson;
+}
+
+
+
+.skills
+{
+    margin: 30px;
+    height:100vh;
+    width:auto;
+}
+
+.skills .heading
+{
+    display: block;
+    text-align: center;
+    margin-top:100px;
+    
+}
+
+.skills .heading h1
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.skills .container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+
+.skills .container .skill
+{
+    position:relative;
+    height:80px;
+    width: 400px;
+    background-color: rgba(42, 42, 42, 0.459);
+    border-radius:40px;
+    padding:10px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.746),
+    2px 2px 2px rgba(255, 255, 255, 0.616),
+    3px 3px 3px rgba(255, 255, 255, 0.5),
+    4px 4px 4px rgba(255, 255, 255, 0.322),
+    5px 5px 5px rgba(255, 255, 255, 0.15);
+    transition: 0.5s ;
+}
+
+.skills .container .skill:hover
+{
+    
+    height:90px;
+    width: 405px;
+    
+}
+
+.skills .container .skill h3
+{
+   position: relative;
+   padding: 10px;
+   display: block;
+   color: rgb(0, 0, 0);
+}
+
+.skills .container .skill .range
+{
+    height: 20px;
+    width: 70%;
+    background-color: black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.602);
+    overflow-x: hidden;
+}
+
+/*  ==============skills percetage============ */
+
+.skills .container .skill .range .range1
+{
+    height:20px;
+    width:90%;
+    background-color:crimson;
+}
+
+.skills .container .skill .range .range2
+{
+    height:20px;
+    width:90%;
+    background-color:crimson;
+}
+
+.skills .container .skill .range .range3
+{
+    height:20px;
+    width:30%;
+    background-color:crimson;
+}
+
+.skills .container .skill .range .range4
+{
+    height:20px;
+    width:70%;
+    background-color:crimson;
+}
+
+
+.skills .container .skill .range .range5
+{
+    height:20px;
+    width:80%;
+    background-color:crimson;
+}
+
+.skills .container .skill .range .range6
+{
+    height:20px;
+    width:90%;
+    background-color:crimson;
+}
+
+.skills .container .skill .range .range7
+{
+    height:20px;
+    width:70%;
+    background-color:crimson;
+}
+
+.skills .container .skill .range .range8
+{
+    height:20px;
+    width:90%;
+    background-color:crimson;
+}
+
+/*  ==============skills percetage============ */
+
+.education
+{
+    margin: 30px;
+    height:100vh;
+    width:auto;
+    background-color: rgb(83, 83, 83);
+}
+
+.education .heading
+{
+    display: block;
+    text-align: center;
+    margin-top:100px;
+    
+}
+
+.education .heading h1
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.education .edubox 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+}
+
+.education .edubox #box
+{
+    position: relative;
+    height:100%;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.212);
+    margin: 20px;
+    padding:15px;
+    animation: animate 4s infinite ;
+    box-shadow: 2px 2px 2px rgb(230, 230, 230);
+}
+
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(-10px);
+    }
+    50%
+    {
+        transform: translateY(10px);
+    }
+}
+
+.education .edubox #box h3
+{
+    color:crimson;
+    font-size:22px;
+}
+
+
+.mywork
+{
+    margin: 30px;
+    height:180vh;
+    width:auto;
+   
+}
+
+.mywork .heading
+{
+    display: block;
+    text-align: center;
+    margin-top:100px;
+    
+}
+
+.mywork .heading h1
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+.mywork .heading p
+{
+    color: crimson;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.mywork .work
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+}
+
+.mywork .work .con1
+{
+    height:240px;
+    width:470px;
+    margin:8px;
+    background-color: rgba(255, 255, 255, 0.274);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.876), 2px 2px 2px rgba(255, 255, 255, 0.527),3px 3px 3px rgba(255, 255, 255, 0.363);
+}
+
+.mywork .work #content
+{
+    height:225px;
+    width:450px;
+    padding:10px;
+    border:2px solid rgba(80, 80, 80, 0.322);
+    transition: 0.5s;
+}
+
+.mywork .work #content:hover
+{
+    height:233px;
+    width:455px;
+    padding:10px;
+
+}
+
+.contact
+{
+    margin: 30px;
+    height:60vh;
+    width:auto;
+    background-color: rgba(42, 42, 42, 0.294);
+}
+
+.contact .heading
+{
+    display: block;
+    text-align: center;
+    margin-top:100px;
+    
+}
+
+.contact .heading h1
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact .contact-me
+{
+    display: block;
+    text-align: center;
+}
+
+.contact .contact-me span
+{
+    color: crimson;
+    font-size: 44px;
+    font-weight: bold;
+    
+}
+
+
+.contact .contact-me p
+{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.contact .social-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .social-links a 
+{
+   margin:3px;
+   padding:10px;
+}
+
+.contact .social-links a i
+{
+   color:black;
+   font-size: 20px;
+   transition: 0.5s;
+}
+
+.contact .social-links a i:hover
+{
+   color:crimson;
+   font-size: 25px;
+   
+}
+
